@@ -1,0 +1,11 @@
+{
+  "name": "jacks-dashboard",
+  "version": "1.0.0",
+  "description": "Personal dashboard for Jack's projects and PRs",
+  "scripts": {
+    "start": "python3 -m http.server 8080 || python -m SimpleHTTPServer 8080"
+  },
+  "keywords": ["dashboard", "projects", "status"],
+  "author": "Milo",
+  "license": "MIT"
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jack's Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Jack's Dashboard</h1>
+      <p class="subtitle">Projects, PRs & Activity</p>
+      <button id="refreshBtn" class="refresh">🔄 Refresh</button>
+    </header>
+
+    <div class="grid">
+      <!-- Open PRs Section -->
+      <section class="card prs">
+        <h2>📬 Open PRs</h2>
+        <div id="prsList" class="prs-list">
+          <p class="loading">Loading...</p>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="card stats">
+        <h2>📊 Quick Stats</h2>
+        <div class="stats-grid" id="statsGrid">
+          <div class="stat-item">
+            <span class="stat-value" id="openPrs">-</span>
+            <span class="stat-label">Open PRs</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value" id="waitingReview">-</span>
+            <span class="stat-label">Waiting Review</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value" id="changesRequested">-</span>
+            <span class="stat-label">Changes Requested</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recent Activity -->
+      <section class="card activity">
+        <h2>📅 Recent Activity</h2>
+        <div id="activityList" class="activity-list">
+          <p class="loading">Loading...</p>
+        </div>
+      </section>
+
+      <!-- Tasks -->
+      <section class="card tasks">
+        <h2>📝 Active Tasks</h2>
+        <div id="tasksList" class="tasks-list">
+          <p class="loading">Loading...</p>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>Last updated: <span id="lastUpdated">Never</span></p>
+      <p class="meta">Dashboard by Milo 🤖</p>
+    </footer>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
